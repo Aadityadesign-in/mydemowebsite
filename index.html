@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaditya Design | Multi-Business Demo Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        ⚡ Live Interactive Demo Showcase — Click Any Button To Test Features!
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-laptop-code"></i> <span>Aaditya</span>Digital-in
+        </div>
+        <a href="https://wa.me/919135766040?text=Hi,%20I%20want%20to%20build%20a%20website" class="btn-wa-head" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">🔥 Premium Business Solutions</div>
+        <h1>Get A Modern Website That Converts Visitors Into Customers</h1>
+        <p>Choose your business category below and test live booking, menu & inquiry features.</p>
+        
+        <div class="cta-buttons">
+            <a href="#demos" class="btn-primary"><i class="fa-solid fa-eye"></i> Explore Demo Layouts</a>
+        </div>
+    </section>
+
+    <!-- Category Selector Section -->
+    <section class="demo-section" id="demos">
+
+        <h2>Choose Your Industry</h2>
+        <p class="subtitle">Click tabs to change business category</p>
+
+        <!-- Category Tabs -->
+        <div class="tab-buttons">
+            <button class="tab-btn active" onclick="openDemo(event, 'restaurant')">
+                <i class="fa-solid fa-utensils"></i> Restaurant
+            </button>
+            <button class="tab-btn" onclick="openDemo(event, 'salon')">
+                <i class="fa-solid fa-scissors"></i> Salon & Spa
+            </button>
+            <button class="tab-btn" onclick="openDemo(event, 'coaching')">
+                <i class="fa-solid fa-graduation-cap"></i> School / Coaching
+            </button>
+            <button class="tab-btn" onclick="openDemo(event, 'business')">
+                <i class="fa-solid fa-store"></i> Retail / Showroom
+            </button>
+        </div>
+
+        <!-- DEMO CARDS -->
+
+        <!-- 1. RESTAURANT DEMO -->
+        <div id="restaurant" class="demo-card active-card">
+            <div class="card-header res-bg">
+                <span class="category-tag">Restaurant Preview</span>
+                <h3>Spice & Grill Family Restaurant</h3>
+                <p>Authentic Indian & Continental Cuisine</p>
+            </div>
+            <div class="card-body">
+                <h4><i class="fa-solid fa-fire"></i> Chef's Today Special Menu</h4>
+                <div class="item-grid">
+                    <div class="item-box">
+                        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=300" alt="Paneer">
+                        <div class="item-info">
+                            <h5>Special Paneer Tikka</h5>
+                            <span class="price">₹280</span>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300" alt="Pizza">
+                        <div class="item-info">
+                            <h5>Loaded Cheese Pizza</h5>
+                            <span class="price">₹340</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-box">
+                    <a href="https://wa.me/919135766040?text=Hello,%20I%20want%20to%20order%20food%20from%20your%20Restaurant" class="btn-action wa-btn" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Order On WhatsApp
+                    </a>
+
+                    <button class="btn-action outline" onclick="showFeatureModal('Restaurant Table Booking System', 'Jab koi customer yahan click karega, toh uske samne Table Booking ka form khulega. Confirmation details direct owner ke WhatsApp/SMS par mil jayengi!')">
+                        <i class="fa-solid fa-calendar-check"></i> Reserve Table
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. SALON DEMO -->
+        <div id="salon" class="demo-card">
+            <div class="card-header salon-bg">
+                <span class="category-tag">Salon & Spa Preview</span>
+                <h3>Velvet Touch Unisex Salon</h3>
+                <p>Luxury Hair, Skin & Makeup Treatments</p>
+            </div>
+            <div class="card-body">
+                <h4><i class="fa-solid fa-sparkles"></i> Popular Services & Pricing</h4>
+                <div class="service-list">
+                    <div class="service-item">
+                        <div><strong>Hair Styling & Cut</strong><p>Includes hair wash + blow dry</p></div>
+                        <span class="price">₹499</span>
+                    </div>
+                    <div class="service-item">
+                        <div><strong>Glow Hydra Facial</strong><p>60 mins deep cleansing</p></div>
+                        <span class="price">₹1,999</span>
+                    </div>
+                </div>
+
+                <div class="action-box">
+                    <button class="btn-action salon-btn" onclick="showFeatureModal('Salon Appointment Booking', 'Aapke customers direct apna pasandida time slot, date aur service select karke appointment book kar sakte hain!')">
+                        <i class="fa-solid fa-calendar-plus"></i> Book Appointment
+                    </button>
+
+                    <a href="https://wa.me/919135766040?text=Hi,%20I%20need%20Salon%20Price%20List" class="btn-action outline" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Get Price List
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. COACHING DEMO -->
+        <div id="coaching" class="demo-card">
+            <div class="card-header school-bg">
+                <span class="category-tag">Education Preview</span>
+                <h3>Pinnacle Coaching Institute</h3>
+                <p>Excellence in Class 9-12th | IIT-JEE & NEET Coaching</p>
+            </div>
+            <div class="card-body">
+                <h4><i class="fa-solid fa-user-graduate"></i> Admissions Open For Batch 2026</h4>
+                <form class="sample-form" onsubmit="event.preventDefault(); showFeatureModal('Admission Lead Capture System', 'Form submit hote hi student ki saari details (Name, Class, Phone) Admin Dashboard aur WhatsApp par instantly save ho jati hain!');">
+                    <div class="input-group">
+                        <input type="text" placeholder="Student Full Name" required>
+                        <input type="tel" placeholder="Mobile Number" required>
+                    </div>
+                    <button type="submit" class="btn-action school-btn">
+                        <i class="fa-solid fa-paper-plane"></i> Apply For Free Demo Class
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- 4. RETAIL/LOCAL BUSINESS DEMO -->
+        <div id="business" class="demo-card">
+            <div class="card-header biz-bg">
+                <span class="category-tag">Retail Business Preview</span>
+                <h3>Royal Home Furniture & Decor</h3>
+                <p>Premium Quality Wooden Furniture at Wholesale Rates</p>
+            </div>
+            <div class="card-body">
+                <h4><i class="fa-solid fa-circle-check"></i> Why Buy From Us?</h4>
+                <ul class="feature-bullets">
+                    <li><i class="fa-solid fa-truck-fast"></i> Same Day Home Delivery</li>
+                    <li><i class="fa-solid fa-shield-halved"></i> 5 Years Warranty On All Woodwork</li>
+                    <li><i class="fa-solid fa-percent"></i> Easy No-Cost EMI Available</li>
+                </ul>
+
+                <div class="action-box">
+                    <button class="btn-action outline" onclick="showFeatureModal('Google Maps Location Integration', 'Is button par click karke customer direct aapki dukan/showroom ka Google Maps location khol sakta hai aur Rasta (Directions) dhoond sakta hai!')">
+                        <i class="fa-solid fa-map-location-dot"></i> Get Store Location
+                    </button>
+
+                    <a href="tel:+919876543210" class="btn-action biz-btn">
+                        <i class="fa-solid fa-phone"></i> Call Store Owner
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Floating WhatsApp Direct Action Button -->
+    <a href="https://wa.me/919135766040?text=Hi,%20I%20saw%20your%20demo%20website" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- POPUP MODAL FOR FEATURE EXPLANATION -->
+    <div id="featureModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-icon"><i class="fa-solid fa-circle-info"></i></div>
+            <h3 id="modalTitle">Feature Title</h3>
+            <p id="modalDesc">Feature Description goes here...</p>
+            <button class="btn-modal-close" onclick="closeModal()">Samajh Gaya (Close)</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Aaditya Design-in. Custom Websites Starting @ ₹4,999</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
